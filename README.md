@@ -2,13 +2,7 @@
 
 A modern, fully responsive personal portfolio website built using **HTML** and **CSS** to showcase my skills, projects, education, and contact information.
 
-## 🚀 Live Demo
 
-Add your deployed website link here.
-
-## 📸 Preview
-
-Add screenshots here.
 
 ## ✨ Features
 
