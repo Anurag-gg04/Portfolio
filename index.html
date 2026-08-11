@@ -1,400 +1,363 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anurag Tomar | Cyber Security & Software Engineer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Anurag Tomar — software engineering portfolio."
     />
+    <title>Anurag Tomar — Engineering Dossier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="dossier.css" />
+    <link rel="stylesheet" href="universal.css" />
   </head>
   <body>
-    <!-- Header Navigation -->
-    <header class="navbar">
-      <a href="#" class="logo">Anurag</a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="hamburger" aria-label="Toggle Navigation">
+    <div class="loader" aria-hidden="true">
+      <div>
+        <b>AT</b>
+        <p>LOADING ENGINEERING DOSSIER</p>
         <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
+      </div>
+    </div>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Anurag Tomar home"
+        >AT<span>_</span></a
+      >
+      <p>ANURAG TOMAR <i>/</i> ENGINEERING DOSSIER</p>
+      <button class="menu-button" aria-expanded="false" aria-controls="menu">
+        INDEX <span>+</span>
+      </button>
     </header>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <a href="#profile">01 / PROFILE</a
+      ><a href="#experience">02 / EXPERIENCE</a
+      ><a href="#work">03 / CASE FILES</a><a href="#lab">04 / ENGINEERING LAB</a
+      ><a href="#contact">05 / CONTACT</a>
+    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <div class="hero-glow hero-glow-1"></div>
-      <div class="hero-glow hero-glow-2"></div>
-      <div class="hero-content">
-        <div class="badge">
-          <span class="badge-dot"></span> Available for Engineering & Security
-          Roles
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-meta">
+          <p><span></span> SYSTEM STATUS: AVAILABLE</p>
+          <p>DEHRADUN, INDIA <i>•</i> UTC +05:30</p>
         </div>
-        <h1 class="hero-title">Anurag Tomar</h1>
-        <h2 class="hero-subtitle">
-          B.Tech CSE (Cyber Security & Privacy) & Software Engineer
-        </h2>
-        <p class="summary">
-          Specialized in core application development, full-stack web solutions,
-          and web application security testing. Experienced in evaluating
-          vulnerabilities, system design, and building resilient software.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            <span>Explore Work</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="#contact" class="btn btn-secondary">
-            <span>Contact Me</span>
-          </a>
+        <div class="hero-title">
+          <p class="label">SOFTWARE ENGINEER <i>×</i> PROBLEM SOLVER</p>
+          <h1 id="hero-title">
+            Build with intent.<br /><em>Ship with care.</em>
+          </h1>
         </div>
-        <div class="social-strip">
-          <a href="https://github.com" target="_blank" aria-label="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="mailto:tomaranurag724@gmail.com" aria-label="Email"
-            ><i class="fas fa-envelope"></i
-          ></a>
-          <a href="tel:+917505410878" aria-label="Phone"
-            ><i class="fas fa-phone"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-      <div class="section-header">
-        <h2 class="section-title">Technical Expertise</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="card-icon"><i class="fas fa-code"></i></div>
-          <h3>Languages & Web</h3>
-          <ul class="skill-tags">
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Chart.js</li>
-            <li>OOP</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
-          <h3>Cybersecurity</h3>
-          <ul class="skill-tags">
-            <li>Vulnerability Assessment</li>
-            <li>Web App Security Testing</li>
-            <li>Risk Assessment</li>
-            <li>CVSS Scoring</li>
-            <li>Auth Security</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <div class="card-icon"><i class="fas fa-terminal"></i></div>
-          <h3>Tools & Databases</h3>
-          <ul class="skill-tags">
-            <li>Kali Linux</li>
-            <li>Burp Suite</li>
-            <li>OWASP ZAP</li>
-            <li>Nessus</li>
-            <li>OpenVAS</li>
-            <li>MySQL</li>
-            <li>Git</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-      <div class="section-header">
-        <h2 class="section-title">Professional Experience</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-card">
-          <div class="timeline-header">
-            <div>
-              <h3 class="role-title">Cybersecurity Trainee Intern</h3>
-              <h4 class="company-name">
-                <i class="fas fa-building"></i> Skillario
-              </h4>
-            </div>
-            <span class="timeline-date"
-              ><i class="far fa-calendar-alt"></i> July 2026 – Present</span
-            >
-          </div>
-          <ul class="experience-list">
-            <li>
-              Acquired practical experience in security architecture,
-              vulnerability assessment, and threat mitigation methodologies.
-            </li>
-            <li>
-              Performed comprehensive vulnerability assessments in controlled
-              lab environments using Kali Linux, Burp Suite, OWASP ZAP, Nessus,
-              and OpenVAS.
-            </li>
-            <li>
-              Conducted web application security testing evaluating
-              authentication, authorization, and business logic flaws.
-            </li>
-            <li>
-              Analyzed vulnerabilities using CVSS scoring and risk
-              prioritization to formulate precise remediation strategies.
-            </li>
-            <li>
-              Engineered audit reports documenting technical security findings
-              and mitigation guidelines.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <div class="section-header">
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon-box"><i class="fas fa-cubes"></i></div>
-            <div class="project-links">
-              <a
-                href="https://github.com/Anurag-gg04/WorkFlowx"
-                target="_blank"
-                title="GitHub Repository"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://workflwx.netlify.app/"
-                target="_blank"
-                title="Live Preview"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
-          <h3 class="project-title">WorkFlowX – Enterprise Workspace Suite</h3>
-          <p class="project-desc">
-            Single Page Application integrating 12 productivity modules
-            including Kanban Board, Analytics, Projects, and Team Chat. Features
-            dynamic workflows, lazy rendering, and glassmorphic styling.
-          </p>
-          <div class="tech-stack">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>SPA Architecture</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon-box"><i class="fas fa-wallet"></i></div>
-            <div class="project-links">
-              <a
-                href="https://github.com/Anurag-gg04/Expense-Tracker-"
-                target="_blank"
-                title="GitHub Repository"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://pocketifyexpensetracker.netlify.app/"
-                target="_blank"
-                title="Live Preview"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-            </div>
-          </div>
-          <h3 class="project-title">Smart Expense Tracker</h3>
-          <p class="project-desc">
-            Full-featured transaction manager supporting CRUD operations,
-            persistent local storage, interactive Chart.js visualizations,
-            real-time search, and instant automated CSV export.
-          </p>
-          <div class="tech-stack">
-            <span>JavaScript</span>
-            <span>Chart.js</span>
-            <span>Local Storage</span>
-            <span>CSS3</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon-box"><i class="fas fa-vault"></i></div>
-            <div class="project-links">
-              <a
-                href="https://github.com/Anurag-gg04/secure-bank-management-system"
-                target="_blank"
-                title="GitHub Repository"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <h3 class="project-title">Secure Bank Management System</h3>
-          <p class="project-desc">
-            Robust CLI banking application engineered using Java OOP principles.
-            Implements account creation, SHA-256 PIN hashing, encrypted
-            transaction logging, and admin audit tools.
-          </p>
-          <div class="tech-stack">
-            <span>Java</span>
-            <span>OOP</span>
-            <span>Collections</span>
-            <span>SHA-256</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="section" id="education">
-      <div class="section-header">
-        <h2 class="section-title">Education & Achievements</h2>
-      </div>
-      <div class="education-grid">
-        <div class="edu-card">
-          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
-          <h3>Education</h3>
-          <div class="edu-details">
-            <h4>B.Tech in Computer Science Engineering</h4>
-            <p class="spec">Specialization: Cyber Security & Privacy</p>
-            <p class="institution">DIT University, Dehradun</p>
-            <span class="edu-date">2023 – Present</span>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="card-icon"><i class="fas fa-certificate"></i></div>
-          <h3>Certifications</h3>
-          <ul class="list-styled">
-            <li>
-              <i class="fas fa-shield-check"></i> Cisco – Introduction to
-              Cybersecurity
-            </li>
-            <li>
-              <i class="fas fa-shield-check"></i> Commonwealth Bank –
-              Cybersecurity Simulation
-            </li>
-            <li>
-              <i class="fas fa-shield-check"></i> HackerRank – Java Basics
-            </li>
-            <li><i class="fas fa-shield-check"></i> HackerRank – CSS</li>
-          </ul>
-        </div>
-
-        <div class="edu-card">
-          <div class="card-icon"><i class="fas fa-award"></i></div>
-          <h3>Achievements</h3>
-          <ul class="list-styled">
-            <li>
-              <i class="fas fa-trophy"></i> Finalist – CodeFusion, Manipal
-              University Jaipur
-            </li>
-            <li>
-              <i class="fas fa-trophy"></i> Participant – AlgoQuest 2026 Coding
-              Competition
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <div class="section-header">
-        <h2 class="section-title">Contact Me</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Let's build something secure & scalable.</h3>
+        <div class="hero-bottom">
           <p>
-            Open for software engineering roles, security internships, and
-            technical collaborations.
+            Computer Science student turning thoughtful ideas into clear,
+            reliable digital products.
           </p>
-          <div class="contact-methods">
-            <a href="mailto:tomaranurag724@gmail.com" class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <span>Email</span>
-                <strong>tomaranurag724@gmail.com</strong>
+          <a href="#work">EXPLORE CASE FILES <b>↓</b></a>
+        </div>
+        <div class="hero-code" aria-hidden="true">
+          <span>const</span> mindset = <i>"curious + practical"</i>;<br /><span
+            >const</span
+          >
+          focus = <i>"useful software"</i>;
+        </div>
+      </section>
+
+      <section
+        class="profile section"
+        id="profile"
+        aria-labelledby="profile-title"
+      >
+        <div class="section-number">01 <span>PROFILE</span></div>
+        <div class="profile-copy">
+          <h2 id="profile-title">I make software<br />people can use.</h2>
+          <p>
+            I'm Anurag Tomar, a Computer Science student who enjoys taking a
+            rough requirement all the way to a useful, dependable application. I
+            care about the details that make a product feel clear: sound logic,
+            clean interfaces, and code that is easy to work with.
+          </p>
+          <p>
+            My foundation is Java, JavaScript, OOP and DSA. I bring security
+            awareness too—but first and foremost, I build.
+          </p>
+        </div>
+        <aside class="profile-stats">
+          <div>
+            <small>CURRENTLY</small
+            ><b>Open to a Software<br />Engineering Internship</b>
+          </div>
+          <div>
+            <small>BUILD MODE</small><b><i></i> Product-minded developer</b>
+          </div>
+          <div><small>CORE STACK</small><b>Java / JS / SQL</b></div>
+        </aside>
+      </section>
+
+      <section
+        class="experience section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading">
+          <div class="section-number">02 <span>EXPERIENCE</span></div>
+          <p>2026 / PRESENT</p>
+        </div>
+        <article class="experience-card">
+          <div class="card-top">
+            <p>SKILLARIO</p>
+            <span>ACTIVE ROLE</span>
+          </div>
+          <div class="experience-title">
+            <h2 id="experience-title">Cybersecurity<br />Trainee Intern</h2>
+            <p>
+              Gaining practical experience analysing real web applications,
+              communicating technical findings, and working through structured
+              engineering workflows.
+            </p>
+          </div>
+          <div class="evidence">
+            <div>
+              <strong>15+</strong><span>LIVE APPLICATION<br />ASSESSMENTS</span>
+            </div>
+            <div>
+              <strong>CVSS</strong><span>RISK-BASED<br />PRIORITISATION</span>
+            </div>
+            <div>
+              <strong>OWASP</strong><span>STRUCTURED<br />METHODOLOGY</span>
+            </div>
+          </div>
+          <p class="toolbelt">
+            ENGINEERING SKILLS <b>ANALYSIS</b><b>REPORTING</b><b>DEBUGGING</b
+            ><b>SECURE SDLC</b>
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="case-files section"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading">
+          <div class="section-number">03 <span>SELECTED WORK</span></div>
+          <p id="work-title">CASE FILES / 03</p>
+        </div>
+        <div class="cases">
+          <article class="case active">
+            <button aria-expanded="true">
+              <span class="case-id">CF / 01</span
+              ><span
+                ><b>Bank Management System</b><em>SECURE ACCOUNT CORE</em></span
+              ><i>+</i>
+            </button>
+            <div class="case-body">
+              <p class="case-summary">
+                A multi-user Java account system, designed around fast retrieval
+                and disciplined credential handling.
+              </p>
+              <div class="result">
+                <small>NOTABLE DECISION</small>
+                <p>
+                  <strong>O(1)</strong> account retrieval with HashMap storage.
+                  <strong>Zero plaintext</strong> credentials through SHA-256
+                  PIN authentication.
+                </p>
               </div>
-            </a>
-            <a href="tel:+917505410878" class="contact-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <span>Phone</span>
-                <strong>+91 7505410878</strong>
+              <div class="tags">
+                <span>JAVA</span><span>OOP</span><span>COLLECTIONS</span
+                ><span>SHA-256</span
+                ><a
+                  href="https://github.com/anuragtomar"
+                  target="_blank"
+                  rel="noreferrer"
+                  >VIEW REPOSITORY ↗</a
+                >
               </div>
-            </a>
-            <div class="contact-item">
-              <i class="fas fa-location-dot"></i>
-              <div>
-                <span>Location</span>
-                <strong>Dehradun, India</strong>
+            </div>
+          </article>
+          <article class="case">
+            <button aria-expanded="false">
+              <span class="case-id">CF / 02</span
+              ><span
+                ><b>Smart Expense Tracker</b><em>PERSONAL FINANCE UI</em></span
+              ><i>+</i>
+            </button>
+            <div class="case-body">
+              <p class="case-summary">
+                A responsive finance tool that turns raw transactions into
+                useful decisions without losing simplicity.
+              </p>
+              <div class="result">
+                <small>NOTABLE DECISION</small>
+                <p>
+                  <strong>Full CRUD</strong> and live client-side filtering,
+                  paired with Chart.js visualisations and CSV export.
+                </p>
               </div>
+              <div class="tags">
+                <span>JAVASCRIPT</span><span>CHART.JS</span><span>HTML</span
+                ><span>CSS</span
+                ><a
+                  href="https://github.com/anuragtomar"
+                  target="_blank"
+                  rel="noreferrer"
+                  >VIEW REPOSITORY ↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="case">
+            <button aria-expanded="false">
+              <span class="case-id">CF / 03</span
+              ><span
+                ><b>WorkFlowX Dashboard</b><em>PERSISTENT TASK FLOW</em></span
+              ><i>+</i>
+            </button>
+            <div class="case-body">
+              <p class="case-summary">
+                A drag-and-drop Kanban workspace built to make progress visible
+                and routine work easier to manage.
+              </p>
+              <div class="result">
+                <small>NOTABLE DECISION</small>
+                <p>
+                  <strong>Local persistence</strong>, reusable components, and
+                  real-time task-count analytics across workflow stages.
+                </p>
+              </div>
+              <div class="tags">
+                <span>JAVASCRIPT</span><span>WEB STORAGE</span><span>HTML</span
+                ><span>CSS</span
+                ><a
+                  href="https://github.com/anuragtomar"
+                  target="_blank"
+                  rel="noreferrer"
+                  >VIEW REPOSITORY ↗</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolkit section" aria-labelledby="toolkit-title">
+        <div class="section-heading">
+          <div class="section-number">04 <span>TOOLKIT</span></div>
+          <p id="toolkit-title">WHAT I BUILD WITH</p>
+        </div>
+        <div class="toolkit-grid">
+          <div>
+            <small>LANGUAGES</small>
+            <p>Java<br />JavaScript<br />SQL<br />HTML &amp; CSS</p>
+          </div>
+          <div>
+            <small>ENGINEERING</small>
+            <p>OOP<br />Data Structures<br />Algorithms<br />SDLC</p>
+          </div>
+          <div>
+            <small>TOOLS</small>
+            <p>Git &amp; GitHub<br />MySQL<br />REST APIs<br />Chart.js</p>
+          </div>
+          <div>
+            <small>WORKING STYLE</small>
+            <p>
+              Debugging<br />Problem solving<br />Clear communication<br />Continuous
+              learning
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab section" id="lab" aria-labelledby="lab-title">
+        <div class="section-heading">
+          <div class="section-number">05 <span>ENGINEERING LAB</span></div>
+          <p>INTERACTIVE / PRODUCT MINDSET</p>
+        </div>
+        <div class="lab-grid">
+          <div>
+            <p class="label">BUILD QUALITY CHECK</p>
+            <h2 id="lab-title">Make every<br />detail count.</h2>
+            <p class="lab-copy">
+              Good software balances the right decisions: clear logic, useful
+              interfaces, maintainable code, and a little curiosity. This is the
+              way I approach every build.
+            </p>
+            <button id="scan-button" class="scan-button">
+              <span>◉</span> RUN BUILD REVIEW
+            </button>
+          </div>
+          <div class="console" aria-live="polite">
+            <div class="console-bar">
+              <span><i></i><i></i><i></i> ANURAG/BUILD-REVIEW</span
+              ><b id="console-state">READY</b>
+            </div>
+            <div class="console-main">
+              <div class="radar">
+                <div class="radar-line"></div>
+                <i class="r1"></i><i class="r2"></i><i class="r3"></i>
+              </div>
+              <div class="trust">
+                <small>BUILD SCORE</small><strong id="score">--</strong
+                ><span>/ 100</span>
+              </div>
+            </div>
+            <div id="console-log" class="console-log">
+              <p><b>›</b> Ready to review product decisions.</p>
+              <p><b>›</b> No external service is contacted.</p>
             </div>
           </div>
         </div>
+      </section>
 
-        <form
-          class="contact-form"
-          action="mailto:tomaranurag724@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <div class="form-group">
-            <input type="text" name="name" required placeholder="Your Name" />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Your Email"
-            />
-          </div>
-          <div class="form-group">
-            <textarea
-              name="message"
-              rows="5"
-              required
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">
-            <span>Send Message</span>
-            <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2026 Anurag Tomar. Designed with pure CSS.</p>
-        <div class="footer-links">
-          <a href="#about">Top <i class="fas fa-arrow-up"></i></a>
-        </div>
+      <section class="credentials section">
+        <div class="section-number">05 <span>CREDENTIALS</span></div>
+        <ul>
+          <li>
+            <b>CodeFusion Coding Competition — Finalist</b
+            ><span>Manipal University</span>
+          </li>
+          <li><b>AlgoQuest 2026</b><span>National-level participant</span></li>
+          <li><b>Java Basics &amp; CSS</b><span>HackerRank certified</span></li>
+          <li><b>Introduction to Cybersecurity</b><span>Cisco</span></li>
+          <li>
+            <b>Cybersecurity Job Simulation</b
+            ><span>Commonwealth Bank / Forage</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer id="contact">
+      <p class="label">OPEN CHANNEL / INTERNSHIP INQUIRIES</p>
+      <h2>Let's build<br /><em>the reliable thing.</em></h2>
+      <a class="email" href="mailto:tomaranurag724@gmail.com"
+        >tomaranurag724@gmail.com <span>↗</span></a
+      >
+      <div class="footer-meta">
+        <p>© 2026 ANURAG TOMAR</p>
+        <p>
+          <a
+            href="https://github.com/anuragtomar"
+            target="_blank"
+            rel="noreferrer"
+            >GITHUB ↗</a
+          >
+          <a
+            href="https://linkedin.com/in/anuragtomar"
+            target="_blank"
+            rel="noreferrer"
+            >LINKEDIN ↗</a
+          >
+        </p>
+        <p>BUILT WITH INTENT</p>
       </div>
     </footer>
+    <script src="dossier.js"></script>
   </body>
 </html>

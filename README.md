@@ -1,23 +1,16 @@
-# 🌐 Personal Portfolio Website
+# Anurag Tomar Portfolio
 
-A modern, fully responsive personal portfolio website built using **HTML** and **CSS** to showcase my skills, projects, education, and contact information.
+A responsive, dependency-free portfolio website built with HTML, CSS, and JavaScript. It uses a dark security-operations dossier aesthetic and can deploy directly to Vercel, Netlify, or GitHub Pages.
 
+## Run
 
+Open `index.html` in a browser, or serve this folder with any static server. No install or build step is needed.
 
-## ✨ Features
+## Customise
 
-- 🎨 Modern UI
-- 📱 Fully Responsive
-- 👨‍💻 Hero Section
-- 🙋 About Me
-- 💻 Skills
-- 📂 Projects
-- 🎓 Education
-- 📞 Contact
+- Update profile and project copy in `index.html`.
+- Replace the shared GitHub project URLs with individual repository links when available.
+- Adjust the palette or breakpoints in `style.css`.
+- Add a hosted resume URL to the footer links when it is ready.
 
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- Font Awesome
-- Google Fonts
+`script.js` only powers the expandable project case files, low-key reveal effects, and copy-email interaction. All motion respects the user's reduced-motion preference.
